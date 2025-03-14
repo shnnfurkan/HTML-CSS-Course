@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <title>Hero Page</title>
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', sans-serif;
+                color: #343a40;
+            }
+
+            .container {
+                width: 1200px;
+                margin: 0 auto;
+            }
+
+            .container-inner {
+                width: 1200px;
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+            }
+
+            .container-position {
+                width: 50%;
+            }
+
+            nav {
+                display: flex;
+                justify-content: space-between;
+                padding-top: 26px;
+                font-size: 24px;
+            }
+
+            h1 {
+                font-size: 56px;
+            }
+
+            h2 {
+                font-size: 38px;
+            }
+
+            p {
+                font-size: 20px;
+                line-height: 1.5;
+            }
+
+            header {
+                height: 100vh;
+                background-image: linear-gradient(rgba(34,34,34,0.6),rgba(34,34,34,0.6)),url(img/hero-1.jpg); 
+                background-size: cover;
+                color: white;
+                position: relative;
+            }
+
+            section {
+                margin: 50px 0px;
+            }
+
+            section h2 {
+                margin-bottom: 24px;
+            }
+
+            a {
+                text-decoration: none;
+                color: white;
+                background-color: #e67e22;
+                display: inline-block;
+                padding: 12px 24px;
+                border-radius: 10px;
+                font-weight: 500;
+            }
+
+            .container-position h1 {
+                margin-bottom: 24px;
+            }
+
+            .container-position p {
+                margin-bottom: 24px;
+            }
+
+            .logo, .nativation {
+                font-weight: 500;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <nav class="container">
+                <div class="logo">LOGO</div>
+                <div class="navigation">NAVIGATION</div>
+            </nav>
+            <div class="container-inner">
+                <div class="container-position">
+                    <h1>A healty meal delivered to your door, every single day</h1>
+                    <p>The smart 365-days-per-year food subscription that will make you eat healty algain. Tailored to your personal tastes and nutritional needs.</p>
+                    <a href="#">Start eating well</a>
+                </div>
+            </div>
+        </header>
+
+        <section>
+            <div class="container">
+                <h2>Some random heading</h2>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Pariatur ipsam molestias nam placeat aliquid sequi non eaque aspernatur reiciendis repellendus labore obcaecati dolorum, praesentium voluptatum recusandae accusamus quasi! Placeat, perspiciatis.</p>
+            </div>
+        </section>
+    </body>
+
+</html>

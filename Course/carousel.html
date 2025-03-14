@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <title>Carousel Page</title>
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', sans-serif;
+                color: #c3fae8;
+                line-height: 1;
+            }
+
+            /* #c3fae8 Text*/
+            /* #087f5b Background*/
+            /* transform: scale() */
+            /* transform: translate (x de hareket + sağ, y de hareket + aşağı) kendi kapladığı alan kadar kayar. */
+
+            .container {
+                width: 850px;
+                margin: 100px auto;
+                background-color: #087f5b;
+                padding: 24px;
+                padding-left: 86px;
+                display: flex;
+                align-items: center;
+                gap: 86px;
+                border-radius: 8px;
+                position: relative;
+            }
+
+            img {
+                width: 200px;
+                transform: scale(1.30);
+                border-radius: 8px;
+            }
+
+            .carousel-text {
+                font-size: 18px;
+                line-height: 1.5;
+                font-weight: 500;
+                margin-bottom: 32px;
+            }
+
+            .carousel-name {
+                font-size: 16px;
+                margin-bottom: 4px;
+            }
+
+            .carousel-work {
+                font-size: 14px;
+            }
+
+            .btn {
+                border: none;
+                cursor: pointer;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: absolute;
+                background-color: #fff;
+                box-shadow: 0px 12px 24px 0px rgb(0,0,0,0.2);
+                border-radius: 24px;
+                padding: 8px;
+            }
+
+            .icon {
+                width: 24px;
+                height: 24px;
+                stroke: #087f5b;
+            }
+
+            .btn-left {
+                left: 0;
+                top: 50%;
+                transform: translate(-50%, -50%);
+            }
+
+            .btn-right {
+                right: 0;
+                top: 50%;
+                transform: translate(50%, -50%);
+            }
+
+            .other-space {
+                position: absolute;
+                left: 50%;
+                bottom: 0;
+                display: flex;
+                gap: 10px;
+                transform: translate(-50%, 25px);
+            }
+
+            .space {
+                height: 12px;
+                width: 12px;
+                border-radius: 20px;
+                cursor: pointer;
+                background-color: #fff;
+                border: 2px solid #087f5b;
+            }
+
+            .space-green {
+                background-color: #087f5b;
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+        <div class="container">
+            <img src="img/maria.jpg" alt="Esra-Photo"/>
+            <blockquote>
+                <p class="carousel-text">Merhaba, ben Esra Koç. 24 yaşındayım ve Doğuş Üniversitesi Yazılım Mühendisliği bölümünde 4. sınıf öğrencisiyim. Full stack web geliştirme konusunda kendimi geliştirmekteyim. Furkan'ı çok seviyorum.</p>
+                <p class="carousel-name">Esra KOÇ</p>
+                <p class="carousel-work">Junior Developer at Gelecek Varlık</p>
+            </blockquote>
+            <button class="btn btn-left">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                </svg>                  
+            </button>
+            <button class="btn btn-right">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                </svg>
+            </button>
+            <div class="other-space">
+                <button class="space space-green"></button>
+                <button class="space"></button>
+                <button class="space"></button>
+                <button class="space"></button>
+            </div>
+        </div>
+
+    </body>
+
+</html>

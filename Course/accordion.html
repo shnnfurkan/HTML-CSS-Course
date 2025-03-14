@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <title>Accordion Page</title>
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', sans-serif;
+                color: #343a40;
+                line-height: 1;
+            }
+
+            .container {
+                width: 700px;
+                margin: 100px auto;
+            }
+
+            .icon {
+                width: 24px;
+                height: 24px;
+                stroke: #343a40;
+            }
+
+            .item {
+                display: grid;
+                grid-template-columns: auto 1fr auto;
+                column-gap: 30px;
+                row-gap: 30px;
+                box-shadow: 0px 0px 30px 0px rgb(0,0,0,0.1);
+                padding: 24px;
+                margin-bottom: 24px;
+            }
+
+            .number, .title {
+                font-size: 24px;
+                font-weight: 500;
+            }
+            
+            .number {
+                color: gray;
+            }
+
+            .hidden-box {
+                grid-column: 2 / 3;
+                display: none;
+            }
+
+            ul {
+                margin-left: 20px;
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+                font-size: 14px;
+                color: gray;
+            }
+
+            .hidden-box p {
+                margin-bottom: 24px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+            
+            .open {
+                border-top: 4px solid darkgreen;
+            }
+
+            .open .number, 
+            .open .title {
+                color: darkgreen;
+            }
+
+            .open .icon {
+                stroke: darkgreen;
+            }
+
+            .open .hidden-box {
+                display: block;
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+
+        <div class="container">
+            <div class="item">
+                <p class="number">01</p>
+                <p class="title">Where are these chairs assembled?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+                <div class="hidden-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo omnis qui consectetur unde iusto nemo amet nulla eligendi, incidunt facilis, ducimus quibusdam suscipit! Exercitationem ab labore dolorum.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Explicabo omnis qui consectetur unde iusto nemo amet nulla eligendi</li>
+                        <li>Incidunt facilis, ducimus quibusdam suscipit!</li>
+                        <li>Exercitationem ab labore dolorum nam iure quibusdam.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item open">
+                <p class="number">02</p>
+                <p class="title">How long do I have to return my chair?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+                <div class="hidden-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo omnis qui consectetur unde iusto nemo amet nulla eligendi, incidunt facilis, ducimus quibusdam suscipit! Exercitationem ab labore dolorum.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Explicabo omnis qui consectetur unde iusto nemo amet nulla eligendi</li>
+                        <li>Incidunt facilis, ducimus quibusdam suscipit!</li>
+                        <li>Exercitationem ab labore dolorum nam iure quibusdam.</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="item">
+                <p class="number">03</p>
+                <p class="title">Do you ship to countries outside the EU?</p>
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="icon">
+                <path stroke-linecap="round" stroke-linejoin="round" d="m19.5 8.25-7.5 7.5-7.5-7.5" />
+                </svg>
+                <div class="hidden-box">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo omnis qui consectetur unde iusto nemo amet nulla eligendi, incidunt facilis, ducimus quibusdam suscipit! Exercitationem ab labore dolorum.</p>
+                    <ul>
+                        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit.</li>
+                        <li>Explicabo omnis qui consectetur unde iusto nemo amet nulla eligendi</li>
+                        <li>Incidunt facilis, ducimus quibusdam suscipit!</li>
+                        <li>Exercitationem ab labore dolorum nam iure quibusdam.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </body>
+
+</html>

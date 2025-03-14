@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+        <title>Pagination Page</title>
+        <style>
+
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: 'Inter', sans-serif;
+                color: #343a40;
+            }
+
+            .container {
+                width: 800px;
+                margin: 150px auto;
+                position: relative;
+
+                display: flex;
+                justify-content: center;
+            }
+
+            .pagingation {
+                display: flex;
+                gap: 24px;
+            }
+
+            .btn {
+                border: none;
+                width: 30px;
+                height: 30px;
+                cursor: pointer;
+                background-color: white;
+                font-size: 16px;
+            }
+
+            .pagingation .btn:nth-child(3) {
+                background-color: #087f5b;
+                color: white;
+                border-radius: 18px;
+            }
+
+            .btn-left{
+                position: absolute;
+                top:0;
+                left: 15%;
+                transform: translate(0, -7px)
+            }
+
+            .btn-right {
+                position: absolute;
+                top: 0;
+                right: 15%;
+                transform: translate(0, -7px)
+            }
+
+            .btn-icon {
+                border: 1px solid #087f5b;
+                background-color: white;
+                border-radius: 30px;
+                padding: 8px;
+                cursor: pointer;
+            }
+
+            .hero-icon {
+                width: 24px;
+                height: 24px;
+                stroke: #087f5b;
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="pagingation">
+                <button class="btn">1</button>
+                <button class="btn">2</button>
+                <button class="btn">3</button>
+                <button class="btn">4</button>
+                <button class="btn">5</button>
+                <button class="btn">6</button>
+                <button class="btn">...</button>
+                <button class="btn">23</button>
+            </div>
+                <button class="btn-icon btn-left">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hero-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 19.5 8.25 12l7.5-7.5" />
+                    </svg>
+                </button>
+                <button class="btn-icon btn-right">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="hero-icon">
+                        <path stroke-linecap="round" stroke-linejoin="round" d="m8.25 4.5 7.5 7.5-7.5 7.5" />
+                    </svg>
+                </button>
+        </div>
+    </body>
+
+</html>
