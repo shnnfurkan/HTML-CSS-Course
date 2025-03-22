@@ -305,3 +305,52 @@ body {
     font-size: 1.6rem;
     line-height: 1.4;
 }
+
+/* insights-section */
+.insights-section {
+    padding: 1.2rem 0 1.2rem 0;
+}
+
+.insights-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 1.6rem;
+}
+
+.insights-item {
+    padding: 2.4rem;
+    border-radius: 9px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+}
+
+.item-1 {
+    background-color: #4fa34f;
+    color: white;
+}
+
+.item-2 {
+    background-color: #d5e2bc;
+}
+
+.item-3 {
+    background-color: #d0ffd6;
+}
+
+.item-4 {
+    background-color: #daffef;
+}
+
+.insights-item h2 {
+    font-size: 2.4rem;
+    line-height: 1.3;
+}
+
+.insights-item p {
+    font-size: 1.6rem;
+    line-height: 1.4;
+
+    width: 90%;
+}
