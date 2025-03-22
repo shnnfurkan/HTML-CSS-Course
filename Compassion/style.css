@@ -117,7 +117,7 @@ body {
 
 /* about-section */
 .about-section {
-    padding: 9.6rem;
+    padding: 9.6rem 0 9.6rem 0;
 }
 
 .about-container {
@@ -240,4 +240,68 @@ body {
     flex-direction: column;
     gap: 3.2rem;
     margin-top: 2.4rem;
+}
+
+/* testimonials-section */
+.testimonials-section {
+    padding: 6.4rem 0 6.4rem 0;
+    background-color: #f8f7f7;
+}
+
+.testimonials-container {
+    max-width: 140rem; 
+    margin: 0 auto;
+    padding: 0 3.2rem;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 9.6rem;
+}
+
+.testimonials-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 3.2rem 4.8rem;
+}
+
+.testimonials-left h2 {
+    font-size: 4.4rem;
+    line-height: 1.3;
+}
+
+.testimonials-left p {
+    font-size: 2.4rem;
+    line-height: 1.5;
+}
+
+.testimonials-right {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+
+.testimonials-list {
+    background-color: #e9e9e9;
+    border-radius: 9px;
+    padding: 3.2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 4.8rem;
+}
+
+.testimonials-list span {
+    font-size: 3.6rem;
+    font-weight: 600;
+}
+
+.testimonials-list-item h3 {
+    font-size: 2.4rem;
+    margin-bottom: 1.6rem;
+}
+
+.testimonials-list-item p {
+    font-size: 1.6rem;
+    line-height: 1.4;
 }
