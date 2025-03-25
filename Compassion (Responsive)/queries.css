@@ -1,0 +1,528 @@
+/* 16px -> 1em  */
+
+/* ------------------------------- */
+
+/* 1300px -> 81,25em */
+/* 1200px -> 75em */
+/* 1158px -> 72,375em */
+/* 1100px -> 68,75em */
+/* 985px -> 61,5625em */
+/* 860px -> 53,75em */
+/* 818px -> 51,125em */
+/* 735px -> 45,9375em */
+/* 660px -> 41,25em */
+/* 610px -> 38,125em */
+/* 602px -> 37,625em */
+/* 558px -> 34,875 */
+
+/* ------------------------------- */
+
+/* 
+- Font sizes (px)
+10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
+- Spacing system (px)
+2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128 
+*/
+
+/* @media (max-width: ) {
+    
+} */
+
+@media (max-width: 81.25em) {
+    .hero-title h1 {
+        font-size: 3.6rem;
+        line-height: 1.3;
+    }
+
+    .hero-footer-title {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 75em) {
+    .hero-img {
+        text-align: center;
+    }
+
+    .hero-main {
+        gap: 12rem;
+    }
+
+    .hero-title {
+        text-align: center;
+    }
+
+    .hero-footer {
+        align-items: center;
+    }
+
+    .hero-img img {
+        width: 75%;
+    }
+
+    .hero-container {
+        grid-template-columns: 1fr;
+    }
+
+    .step-parag1 h2, .step-parag2 h2 {
+        font-size: 3.6rem;
+        line-height: 1.3;
+    }
+
+    .step-parag1 p, .step-parag2 p {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+    
+    .testimonials-left h2 {
+        font-size: 3.6rem;
+    }
+
+    .testimonials-left p {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    .insights-item h2 {
+        font-size: 2rem;
+    }
+
+    .insights-item p {
+        font-size: 1.4rem;
+    }
+    
+    .blog-notes h2 {
+        font-size: 3.6rem;
+    }
+
+    .blog-notes-item p {
+        font-size: 2rem;
+    }
+
+    .blogs h2 {
+        font-size: 2.4rem;
+    }
+}
+
+@media (max-width: 72.375em) {
+    .subscribe-send h2 {
+        font-size: 3rem;
+    }
+
+    .subscribe-send a {
+        top: 111px;
+    }
+}
+
+@media (max-width: 68.75em) {
+    .partner-title {
+        font-size: 3.6rem;
+    }
+    
+    .partners-img {
+        width: 150px;
+    }
+
+    .partner-citation {
+        font-size: 2rem;
+    }
+    
+    .blogs h2 {
+        font-size: 2rem;
+    }
+    
+    .subscribe-send p {
+        line-height: 1.5;
+    }
+}
+
+@media (max-width: 61.5625em) {
+    .about-header h2 {
+        font-size: 3.6rem;
+    }
+
+    .about-parag {
+        font-size: 1.4rem;
+    }
+    
+    .about-header a {
+        font-size: 1.4rem;
+        padding: 1.8rem 2.4rem;
+    }
+
+    .step-parag1 {
+        justify-content: flex-start;
+        gap: 4.8rem;
+    }
+    
+    .step-parag1 h2, .step-parag2 h2 {
+        font-size: 2.4rem;
+    }
+
+    .step-parag1 p, .step-parag2 p {
+        font-size: 1.6rem;
+    }
+
+    .step-list {
+        font-size: 1.4rem;
+        gap: 2.4rem;
+    }
+
+    .testimonials-left h2 {
+        font-size: 3rem;
+    }
+
+    .subscribe-send h2 {
+        font-size: 2.4rem;
+    }
+
+    .subscribe-send a {
+        top: 94px;
+    }
+
+    .subscribe-header p {
+        font-size: 1.4rem;
+    }
+
+    .subscribe-send p {
+        font-size: 1.4rem;
+    }
+
+    .blog-notes h2 {
+        font-size: 3rem;
+    }
+
+    .causes-cards {
+        grid-template-columns: 0.5fr;
+        row-gap: 4.8rem;
+        justify-content: center;
+    }
+
+    .blog-container {
+        grid-template-columns: 1fr;
+        row-gap: 4.8rem;
+    }
+
+    .blog-notes {
+        justify-content: flex-start;
+        gap: 2.4rem;
+    }
+    
+    .blog-notes h2 {
+        text-align: center;
+    }
+
+    .blog-notes-item p {
+        text-align: center;
+    }
+
+    .blog-notes-item a {
+        align-self: center;
+    }
+
+    .about-title {
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 53.75em) {
+    .partners-img {
+        width: 125px;
+    }
+
+    .partner-citation {
+        font-size: 1.6rem;
+    }
+
+    .partner-title {
+        font-size: 3rem;
+    }
+}
+
+@media (max-width: 51.125em) {
+    .subscribe-send a {
+        top: 124px;
+        right: 5px;
+    }
+
+    .testimonials-container {
+        grid-template-columns: 1fr;
+        column-gap: 0rem;
+    }
+
+    .testimonials-left {
+        gap: 4.8rem;
+    }
+
+    .testimonials-left p {
+        font-size: 1.6rem;
+    }
+
+    .testimonials-left h2 {
+        text-align: center;
+    }
+
+    .testimonials-left p {
+        text-align: center;
+    }
+
+    .insights-container {
+        grid-template-columns: 1fr 1fr;
+        column-gap: 1.6rem;
+        row-gap: 1.6rem;
+    }
+
+    .causes-section {
+        padding-top: 9.6rem;
+    }
+
+    .footer-title h4 {
+        font-size: 2rem;
+    }
+
+    .about-img {
+        height: 4.4rem;
+        width: 4.4rem;
+    }
+
+    .about-img-h3 {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 2.4rem;
+    }
+}
+
+@media (max-width: 45.9375em) {
+    .partners-img {
+        width: 110px;
+    }
+
+    .partner-title {
+        margin-bottom: 8rem;
+    }
+
+    .footer-dip p {
+        font-size: 1.6rem;
+    }
+
+    .causes-img {
+        width: 200px;
+        height: 160px;
+    }
+
+    .causes-header p {
+        font-size: 6.2rem;
+    }
+
+    .causes-header p span {
+        font-size: 2.4rem;
+    }
+
+    .causes-body {
+        font-size: 1.4rem;
+    }
+
+    .causes-header {
+        justify-content: flex-start;
+        gap: 2.4rem;
+    }
+
+    .causes-footer h3 {
+        font-size: 2rem;
+    }
+
+    .causes-footer p {
+        font-size: 1.4rem;
+    }
+
+    .step-container {
+        grid-template-columns: 1fr;
+    }
+
+    .step-img {
+        width: 50%;
+        justify-self: center;
+    }
+
+    .step-parag2 {
+        grid-row: 3/4;
+    }
+
+    .subscribe-send a {
+        position: initial;
+        text-align: center;
+    }
+
+    .subscribe-send h2 {
+        font-size: 2rem;
+    }
+}
+
+@media (max-width: 41.25em) {
+    .partners-img {
+        width: 90px;
+    }
+
+    .partner-title {
+        font-size: 2.6rem;
+    }
+
+    .partner-citation {
+        width: 75%;
+    }
+
+    .footer-dip p {
+        font-size: 1.4rem;
+    }
+
+    .footer-title ul li a {
+        font-size: 1.4rem;
+    }
+
+    .footer-title h4 {
+        font-size: 1.4rem;
+    }
+
+    .subscribe-header p {
+        width: 100%;
+    }
+
+    .hero-main {
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 38.125em) {
+    .footer-dip p {
+        font-size: 1.2rem;
+    }
+
+    .about-header h2 {
+        font-size: 3rem;
+    }
+
+    .about-title {
+        font-size: 1.4rem;
+    }
+
+    .about-parag {
+        width: 100%;
+    }
+
+    .about-parag {
+        width: 40%;
+        font-size: 1.2rem;
+    }
+
+    .testimonials-list span {
+        font-size: 3rem;
+    }
+    
+    .testimonials-list-item h3 {
+        font-size: 2rem;
+    }
+
+    .testimonials-list-item p {
+        font-size: 1.4rem;
+    }
+
+    .causes-title {
+        font-size: 3.6rem;
+    }
+
+    .hero-a {
+        display: none;
+    }
+
+    .mobil-icon {
+        display: block;
+        cursor: pointer;
+    }
+
+    .hero-header {
+        justify-content: space-between;
+    }
+    
+    .hero-footer-title {
+        text-align: center;
+    }
+
+    .about-header {
+        flex-direction: column;
+        gap: 2.4rem;
+    }
+
+    .about-title{
+        font-size: 1rem;
+        color: black;
+    }
+}
+
+@media (max-width: 37.625em) {
+    .blogs h2 {
+        font-size: 1.8rem;
+    }
+
+    .blogs-footer {
+        font-size: 1.4rem;
+    }
+
+    .blog-img {
+        width: 200px;
+        height: 200px;
+    }
+
+    .blogs-second {
+        font-size: 1.2rem;
+    }
+
+    .blogs-date {
+        font-size: 1.2rem;
+    }
+
+    .causes-line {
+        width: 20px;
+    }
+
+    .insights-item h2 {
+        font-size: 1.6rem;
+    }
+
+    .partners {
+        display: grid;
+    }
+
+    .partners-img {
+        width: 120px;
+    }
+}
+
+@media (max-width: 34.875em) {
+    .blogs-header {
+        flex-direction: column;
+    }
+
+    .blog-img {
+        align-self: center;
+        width: 180px;
+        height: 180px;
+    }
+
+    .blogs h2 {
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .blogs-footer {
+        font-size: 1.2rem;
+        text-align: center;
+    }
+
+    .testimonials-left h2 {
+        font-size: 2.4rem;
+    }
+
+    .testimonials-left p {
+        font-size: 1.4rem;
+    }
+}
