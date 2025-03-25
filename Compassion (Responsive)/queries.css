@@ -554,6 +554,28 @@
     .step-img {
         width: 75%;
     }
+    .blog-cards-item {
+        flex-direction: column;
+    }
+    .testimonials-left {
+        padding: 0rem;
+        margin-bottom: 4.8rem;
+    }
+    .testimonials-left h2 {
+        text-align: initial;
+    }
+    .testimonials-left p {
+        text-align: initial;
+    }
+    .step-parag1, .step-parag2 {
+        padding: 0rem;
+    }
+    .footer-dip {
+        flex-direction: column;
+        gap: 2.4rem;
+        align-items: center;
+        padding: 1.2rem;
+    }
 }
 
 @media (max-width: 25em) {
@@ -577,5 +599,15 @@
     }
     .step-img {
         width: 100%;
+    }
+    .partner-citation {
+        width: 100%;
+    }
+    .footer-dip p {
+        font-size: 1.4rem;
+        line-height: 1.4;
+    }
+    .insights-item {
+        gap: 3.2rem;
     }
 }
