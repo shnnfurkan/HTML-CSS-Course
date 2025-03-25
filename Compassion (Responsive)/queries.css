@@ -15,6 +15,7 @@
 /* 602px -> 37,625em */
 /* 558px -> 34,875em */
 /* 500px -> 31,25em */
+/* 400px -> 25em */
 
 /* ------------------------------- */
 
@@ -552,5 +553,29 @@
 
     .step-img {
         width: 75%;
+    }
+}
+
+@media (max-width: 25em) {
+    .about-img-h3 {
+        width: 10%;
+    }
+    .about-parag {
+        width: 90%;
+    }
+    .insights-item {
+        padding: 1.2rem;
+    }
+    .insights-item h2 {
+        font-size: 1.4rem;
+    }
+    .insights-item p {
+        font-size: 1.2rem;
+    }
+    .hero-img img {
+        width: 100%;
+    }
+    .step-img {
+        width: 100%;
     }
 }
