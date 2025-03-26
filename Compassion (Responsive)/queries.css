@@ -539,6 +539,11 @@
     .blog-notes-item p {
         font-size: 1.6rem;
     }
+
+    .footer-container {
+        grid-template-columns: 1fr 1fr;
+        row-gap: 4.8rem;
+    }
 }
 
 @media (max-width: 31.25em) {
