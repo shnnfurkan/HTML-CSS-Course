@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Grid-Auto (Implicit Grids and Explicit Grids)</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      background: #f0f0f0;
+      font-family: Arial, sans-serif;
+    }
+
+    .container {
+      display: grid;
+      background: white;
+      padding: 20px;
+      margin: 20px;
+      border: 2px solid #555;
+
+      grid-template-columns: 150px 150px;
+      grid-template-rows: 150px 150px;
+      gap: 10px;
+
+      grid-auto-flow: column;
+      grid-auto-columns: 100px;
+
+      /* grid-auto-flow: row;
+      grid-auto-rows: 120px; */
+
+    /* Default olarak row olur, hangisini seçersek onun grid-auto sunu yazabiliriz */
+    }
+
+    .item {
+      background-color: #4a90e2;
+      color: white;
+      padding: 15px;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="container">
+    <div class="item">1</div>
+    <div class="item">2</div>
+    <div class="item">3</div>
+    <div class="item">4</div>
+    <div class="item">5</div>
+    <div class="item">6</div>
+    <div class="item">7</div>
+    <div class="item">8</div>
+    <div class="item">9</div>
+    <div class="item">10</div>
+  </div>
+
+</body>
+</html>
