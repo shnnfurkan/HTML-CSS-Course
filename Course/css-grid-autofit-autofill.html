@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Auto-fill and Auto-fit</title>
+    <style>
+        .container {
+            margin: 20px 0;
+            background: #eee;
+            padding: 10px;
+            display: grid;
+            gap: 10px;
+        }
+
+        .item {
+            background: coral;
+            padding: 20px;
+            color: white;
+            font-size: 22px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- 
+        auto-fill boş kolonları tutar; auto-fit boş kolonları çöker ve içerikleri genişletir.
+    -->
+
+    <h2>auto-fill</h2>
+    <div class="container" style="grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+    <h2>auto-fit</h2>
+    <div class="container" style="grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+        <div class="item">4</div>
+    </div>
+
+</body>
+
+</html>
