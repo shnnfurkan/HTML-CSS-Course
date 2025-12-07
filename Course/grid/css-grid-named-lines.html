@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Naming Grid Lines</title>
+
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: [header-start h1-begin] 1fr [h1-end h2-begin] 1fr [h2-end h3-begin] 1fr [h3-end header-end];
+            grid-template-rows: 100px 100px;
+            gap: 10px;
+            background: #ddd;
+            padding: 10px;
+        }
+
+        .kutu {
+            background: lightblue;
+            padding: 20px;
+            grid-column: h2-begin / h2-end;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="kutu">İsimlendirilmiş Grid Lines Örneği</div>
+    </div>
+
+</body>
+
+</html>
