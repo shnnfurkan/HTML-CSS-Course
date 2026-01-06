@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Popup</title>
+    <style>
+        .popup {
+            height: 100vh;
+            width: 100%;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: rgba(0, 0, 0, 0.8);
+            z-index: 999999;
+
+            display: none;
+            /* Başta kapalı (none / flex) */
+            align-items: center;
+            justify-content: center;
+        }
+
+        .content {
+            background-color: white;
+            box-shadow: 0 2rem 4rem rgba(0, 0, 0, 0.2);
+            padding: 10px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        Merhaba DÜNYA!
+    </div>
+
+    <div class="popup">
+        <div class="content">
+            Popup Açıldı -_-
+        </div>
+    </div>
+</body>
+
+</html>

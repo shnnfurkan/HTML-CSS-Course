@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Card</title>
+    <style>
+        .card {
+            position: relative;
+            width: 260px;
+            aspect-ratio: 3/4;
+            perspective: 1000px;
+        }
+
+        .card__side {
+            position: absolute;
+            inset: 0;
+            backface-visibility: hidden;
+            transition: transform 0.8s;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .card__side--front {
+            background: blue;
+            color: #fff;
+            transform: rotateY(0);
+        }
+
+        .card__side--back {
+            background: #ff5722;
+            color: #fff;
+            transform: rotateY(180deg);
+        }
+
+        .card:hover .card__side--front {
+            transform: rotateY(-180deg);
+        }
+
+        .card:hover .card__side--back {
+            transform: rotateY(0);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card__side card__side--front">FRONT</div>
+        <div class="card__side card__side--back">BACK</div>
+    </div>
+
+</body>
+
+</html>
